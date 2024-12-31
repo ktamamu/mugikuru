@@ -1,3 +1,3 @@
-module mugikuru
+module github.com/ktamamu/mugikuru
 
-go 1.23.0
+go 1.23
