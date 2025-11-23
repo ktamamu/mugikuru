@@ -75,6 +75,11 @@ c(")(")
 }
 
 func main() {
+	// Switch to alternate screen buffer
+	fmt.Print("\033[?1049h")
+	// Ensure we return to the original screen on exit
+	defer fmt.Print("\033[?1049l")
+
 	rnd := rand.New(rand.NewSource(time.Now().UnixNano()))
 	if err := printRandomCatArt(rnd); err != nil {
 		fmt.Printf("Error: %v\n", err)
