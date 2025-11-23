@@ -50,6 +50,7 @@ brews:
       owner: ktamamu
       name: homebrew-tap
       token: "{{ .Env.TAP_GITHUB_TOKEN }}"
+    folder: Formula
 
 release:
   footer: >-
